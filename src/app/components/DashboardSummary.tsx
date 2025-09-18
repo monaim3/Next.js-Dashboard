@@ -5,20 +5,7 @@ import { motion } from "framer-motion";
 export default function DashboardSummary() {
   return (
     <section className="w-full p-6 bg-white rounded-2xl shadow-md">
-      {/* Animated Header */}
-      <motion.h1
-        className="text-2xl md:text-3xl font-bold text-gray-800 text-center "
-        initial={{ y: -20, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.6 }}
-      >
-        Welcome to Zettabyte Dashboard
-      </motion.h1>
-
-      {/* Subtitle */}
-      <p className="mt-2 text-gray-600 text-center ">
-        Manage posts, users, and more with a clean, modern UI.
-      </p>
+    
 
       {/* Stats Section */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-6">

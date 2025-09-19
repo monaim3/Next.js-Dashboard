@@ -18,7 +18,6 @@ export const useFetch = <T = any>(url: string | null) => {
     if (!url) return;
     setState({ data: null, loading: true, error: null });
     try {
-      // to demonstrate intentional error, allow simulateFail to alter url
       const fetchUrl = simulateFail ? url.replace("/posts", "/invalid-posts") : url;
       const res = await fetch(fetchUrl);
       if (!res.ok) throw new Error(`HTTP ${res.status}`);

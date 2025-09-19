@@ -1,6 +1,4 @@
-
 "use client";
-
 import Link from "next/link";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -21,7 +19,6 @@ export default function Header() {
   return (
     <header className="bg-white shadow-md w-full">
       <div className="max-w-7xl mx-auto flex justify-between items-center px-4 py-3 md:px-8">
-        {/* Logo */}
         <Link href="/" className="text-2xl font-bold text-indigo-600">
           Zettabyte
         </Link>
@@ -68,7 +65,6 @@ export default function Header() {
         </button>
       </div>
 
-      {/* Mobile Menu with Framer Motion */}
       <AnimatePresence>
         {isOpen && (
           <motion.nav

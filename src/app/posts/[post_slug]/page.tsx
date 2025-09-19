@@ -1,26 +1,3 @@
-// "use client";
-// import { Loading } from "@/app/components/Loading";
-// import { useFetch } from "@/app/hooks/useFetch";
-// import { Post } from "@/app/types/post";
-// import { notFound } from "next/navigation";
-
-// export default function PostDetail({ params }: { params: { post_slug: string } }) {
-//     console.log("params", params.post_slug);
-//   const { data, loading, error } = useFetch<Post>(`https://jsonplaceholder.typicode.com/posts/${params.post_slug}`);
-
-//   if (loading) return <Loading />;
-//   if (error) return <div className="text-red-600">Failed to load post: {error}</div>;
-//   if (!data) return notFound();
-
-//   return (
-//     <article className="max-w-3xl">
-//       <h1 className="text-2xl font-bold">{data.title}</h1>
-//       <p className="mt-4">{data.body}</p>
-//     </article>
-//   );
-// }
-
-
 "use client";
 import React from 'react';
 import { ArrowLeft, Calendar, User, Clock, Heart, Share2, Bookmark } from 'lucide-react';
@@ -53,13 +30,6 @@ export default function PostDetail({ params }: { params: { post_slug: string } }
       </div>
 
       <div className="max-w-4xl mx-auto px-6 py-8">
-        {/* Category Badge (Optional - only if your Post type has category) */}
-        {/* <div className="mb-6">
-          <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-[#4F39F6]/10 text-[#4F39F6] border border-[#4F39F6]/20">
-            Category
-          </span>
-        </div> */}
-
         {/* Main Content Card */}
         <article className="bg-white rounded-3xl shadow-xl border border-slate-200/50 overflow-hidden">
           {/* Gradient Header */}
@@ -111,20 +81,6 @@ export default function PostDetail({ params }: { params: { post_slug: string } }
               </p>
             </div>
 
-            {/* Tags - Optional, remove if not needed */}
-            {/* <div className="mt-12 pt-8 border-t border-slate-200">
-              <h3 className="text-sm font-semibold text-slate-500 uppercase tracking-wide mb-4">Tags</h3>
-              <div className="flex flex-wrap gap-2">
-                {data.tags?.map((tag, index) => (
-                  <span
-                    key={index}
-                    className="px-3 py-1 bg-slate-100 hover:bg-[#4F39F6]/10 text-slate-700 hover:text-[#4F39F6] text-sm rounded-full transition-colors duration-200 cursor-pointer"
-                  >
-                    #{tag}
-                  </span>
-                ))}
-              </div>
-            </div> */}
           </div>
         </article>
           </div>

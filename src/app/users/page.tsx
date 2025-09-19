@@ -1,9 +1,9 @@
 "use client";
 import { useState } from "react";
-import { User } from "../types/user";
-import { useFetch } from "../hooks/useFetch";
+import { User } from "../../types/user";
+import { useFetch } from "../../hooks/useFetch";
 import { Users, Search, Building, Mail, RefreshCw, Eye } from "lucide-react";
-import UserModal from "../components/UserModal";
+import UserModal from "../../components/UserModal";
 
 export default function UsersPage() {
   const { data, loading, error } = useFetch<User[]>("https://jsonplaceholder.typicode.com/users");

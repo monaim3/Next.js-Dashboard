@@ -1,9 +1,9 @@
 "use client";
 import React from 'react';
 import { ArrowLeft, Calendar, User, Clock, Heart, Share2, Bookmark } from 'lucide-react';
-import { Loading } from "@/app/components/Loading";
-import { useFetch } from "@/app/hooks/useFetch";
-import { Post } from "@/app/types/post";
+import { Loading } from "@/components/Loading";
+import { useFetch } from "@/hooks/useFetch";
+import { Post } from "@/types/post";
 import { notFound } from "next/navigation";
 import Link from 'next/link';
 

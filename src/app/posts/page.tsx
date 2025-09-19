@@ -2,10 +2,10 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { useFetch } from "../hooks/useFetch";
-import { Post } from "../types/post";
-import PostCard from "../components/PostCard";
-import { Loading } from "../components/Loading";
+import { useFetch } from "../../hooks/useFetch";
+import { Post } from "../../types/post";
+import PostCard from "../../components/PostCard";
+import { Loading } from "../../components/Loading";
 
 export default function PostsPage() {
   const [simulateError, setSimulateError] = useState(false);

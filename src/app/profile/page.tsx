@@ -1,7 +1,7 @@
 "use client";
 import { useSession, signIn, signOut } from "next-auth/react";
 import { useRouter } from "next/navigation";
-import { Loading } from "../components/Loading";
+import { Loading } from "../../components/Loading";
 
 
 

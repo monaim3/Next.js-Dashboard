@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-
 import { motion } from "framer-motion";
 import { useFetch } from "../hooks/useFetch";
 import { Post } from "../types/post";
@@ -14,7 +13,7 @@ export default function PostsPage() {
 
   return (
     <div>
-      <div className="flex justify-between items-center mb-4 pt-8">
+      <div className="flex items-center justify-between mx-auto px-4 sm:px-6 lg:px-8 py-6 pt-8">
         <h2 className="text-xl font-semibold">Posts</h2>
         <div className="flex gap-2">
         <button 
